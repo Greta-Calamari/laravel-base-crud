@@ -4,25 +4,27 @@
 
 
 @section('mainContent')
-<main>
-    <div class="container">
+    <main>
         
-        <div class="row">
-            @foreach ($comics as $comic)
-            <div class="col">
-                <p>
-                    {{$comic->id}}
+            
+            <div class="row">
+                @foreach ($comics as $comic)
+                <div class="col">
+                    <img src="{{$comic->thumb}}" alt="">
+                    <p>
+                        {{$comic->id}}
 
-                </p>
-                <p>
-                    {{$comic->title}}
-                </p>
+                    </p>
+                    <p>
+                        {{$comic->title}}
+                    </p>
+
+                </div>
+                    
+                @endforeach
 
             </div>
-                
-            @endforeach
-
-        </div>
-    </div>
-</main>
+        
+    </main>
+@endsection
 
