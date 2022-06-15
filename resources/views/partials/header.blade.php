@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="{{asset('img/logo.png')}}" alt="" width="30" height="24" class="d-inline-block align-text-top">
                 Dc
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
-              <a class="nav-link" href="">Prodotti</a>
+              <a class="nav-link" href="/comics">Comics</a>
               <a class="nav-link" href="">Aggiungi Prodotto</a>
               {{-- <a class="nav-link" href="/">Disabled</a> --}}
             </div>
