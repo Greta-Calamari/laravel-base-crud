@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('pageTitle','La Molisana - New Comic')
+@section('pageTitle','DC - New Comic')
 
 
 @section('mainContent')
