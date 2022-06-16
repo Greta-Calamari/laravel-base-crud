@@ -8,7 +8,7 @@
 <div class="container">
     <h1>Inserisci Prodotto</h1>
     
-    <form action="{{route('comics.store', $comic->id)}}" method="post">
+    <form action="{{route('comics.update', $comic->id)}}" method="post">
       @csrf
       @method('PUT')
         <div class="mb-3">
