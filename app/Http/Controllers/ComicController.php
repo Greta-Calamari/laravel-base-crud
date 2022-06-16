@@ -40,7 +40,9 @@ class ComicController extends Controller
         $data= $request->all();
         $newComic = new Comic();
         $newComic = Comic::create($data);
-        return redirect()->route('comics.show'. $newComic->id);
+        return redirect()->route('comics.index');
+        // return redirect()->route('comics.show', $newComic->id);
+
 
         
     }
@@ -83,7 +85,9 @@ class ComicController extends Controller
         
         $comic->update($data);
 
-        return redirect()->route('comics.show',$comic->id);
+        // return redirect()->route('comics.index',$comic->id);
+        return redirect()->route('comics.index');
+
         
     }
 

@@ -33,7 +33,7 @@
         <div class="mb-3 form-check">
 
           <label class="form-check-label" for="price">Price</label>
-          <input type="number" class="form-control" id="price" aria-describedby="price" name="price" min="1" max="60">
+          <input step=".01" type="number" class="form-control" id="price" aria-describedby="price" name="price" min="1" max="60">
          
         </div>
 
