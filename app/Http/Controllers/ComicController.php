@@ -7,6 +7,13 @@ use App\Comic;
 
 class ComicController extends Controller
 {
+    protected $validationRule = [
+        'title'=>'required|max:50',
+        'type'=>'required|max:20',
+        'thumb'=>'required|max:255',
+
+
+    ];
     /**
      * Display a listing of the resource.
      *
@@ -37,6 +44,7 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate($this->validationRule);
         $data= $request->all();
         $newComic = new Comic();
         $newComic = Comic::create($data);
@@ -80,6 +88,7 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        $request->validate($this->validationRule);
         $data= $request->all();
         
         
